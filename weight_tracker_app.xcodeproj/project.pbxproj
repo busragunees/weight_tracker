@@ -14,6 +14,7 @@
 		641546E128821360005E9020 /* weight_tracker_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641546E028821360005E9020 /* weight_tracker_appTests.swift */; };
 		641546EB28821360005E9020 /* weight_tracker_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641546EA28821360005E9020 /* weight_tracker_appUITests.swift */; };
 		641546ED28821360005E9020 /* weight_tracker_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641546EC28821360005E9020 /* weight_tracker_appUITestsLaunchTests.swift */; };
+		641546FA28821886005E9020 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641546F928821886005E9020 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		641546E628821360005E9020 /* weight_tracker_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weight_tracker_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		641546EA28821360005E9020 /* weight_tracker_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weight_tracker_appUITests.swift; sourceTree = "<group>"; };
 		641546EC28821360005E9020 /* weight_tracker_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weight_tracker_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		641546F928821886005E9020 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				641546D12882135F005E9020 /* ContentView.swift */,
 				641546D328821360005E9020 /* Assets.xcassets */,
 				641546D528821360005E9020 /* Preview Content */,
+				641546F928821886005E9020 /* HomeView.swift */,
 			);
 			path = weight_tracker_app;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				641546FA28821886005E9020 /* HomeView.swift in Sources */,
 				641546D22882135F005E9020 /* ContentView.swift in Sources */,
 				641546D02882135F005E9020 /* weight_tracker_appApp.swift in Sources */,
 			);
