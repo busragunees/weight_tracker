@@ -46,7 +46,6 @@ struct ContentView: View {
                     
                     Image("ic_splash_logo")
                         .aspectRatio(contentMode: .fit)
-                        .resizable()
                     VStack(){
                         /*Image("bg_rounded_white")
                             .overlay(TitleView(),alignment:.top)
