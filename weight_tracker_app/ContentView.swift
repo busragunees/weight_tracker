@@ -11,7 +11,7 @@ import SwiftUI
 
 struct TitleView:View{
     var body:some View{
-        Text("Welcome to \nWeight Tracker").font(.system(size: 30).bold()).multilineTextAlignment(.center).padding(.top,100).foregroundColor(.indigo) //neden olusturdugum renk eklenmedi
+        Text("Welcome to \nWeight Tracker").font(AppFont.font(type: .ExtraLight, size:28)).multilineTextAlignment(.center).padding(.top,100).foregroundColor(AppColor.getColor(type:.BG_BlueColor))
     }
 }
 struct TextView:View{
@@ -23,42 +23,45 @@ struct TextView:View{
     }
 }
 
-struct GetStartedButton:View{
-    var body: some View{
-        NavigationLink(destination: HomeView()){
-            Text("Get Started")
-                .frame(width: 200 , height: 50, alignment: .center)
-                .background(Color.indigo)
-                .foregroundColor(Color.white)
-                .cornerRadius(8)
-        }
-    }
-}
-
 
 struct ContentView: View {
+    @State var isActive:Bool = false
+    
     var body: some View {
-        NavigationView{
-            
+   
+        if self.isActive {
+            HomeView()
+        }else{
             ZStack(alignment:.top){
                 Color("bgBlueColor")
                 VStack {
                     
                     Image("ic_splash_logo")
                         .aspectRatio(contentMode: .fit)
+                        .padding(.top, 90)
                     VStack(){
-                        /*Image("bg_rounded_white")
+                        Image("bg_rounded_white")
                             .overlay(TitleView(),alignment:.top)
                             .overlay(TextView(),alignment: .center)
                             .shadow(color: .gray, radius: 1)
                             .padding(.top, 1.0)
-                            .overlay(GetStartedButton(),alignment:.bottom)
-                            .frame(height:0)*/
-                    }.background(Image("bg_rounded_white").resizable().edgesIgnoringSafeArea(.all).frame(height:250))
+                            .overlay(
+                                Button(action: { self.isActive=true }) {
+                                    Text("Get Started")
+                                        .frame(width: 270 , height: 60, alignment: .center)
+                                        .background(Color.indigo)
+                                        .foregroundColor(Color.white)
+                                        .cornerRadius(20)
+                                    
+                                    Spacer()
+                                    .frame(height: 160)}.frame(width: 200 , height: 250,alignment: .center),alignment:.bottom)
+                      
+                    }
+                
                 }
-            }
-            
-        }
+            }}
+
+
     }
     
     
