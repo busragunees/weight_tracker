@@ -11,7 +11,7 @@ import SwiftUI
 
 struct TitleView:View{
     var body:some View{
-        Text("Welcome to \nWeight Tracker").font(AppFont.font(type: .ExtraLight, size:28)).multilineTextAlignment(.center).padding(.top,100).foregroundColor(AppColor.getColor(type:.BG_BlueColor))
+        Text("Welcome to \nWeight Tracker").font(AppFont.font(type: .ExtraLight, size:28)).multilineTextAlignment(.center).padding(.top,100).foregroundColor(AppColor.getColor(type:.DarkGray))
     }
 }
 struct TextView:View{

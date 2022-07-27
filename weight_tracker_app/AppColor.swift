@@ -12,7 +12,7 @@ import SwiftUI
 struct AppColor {
 enum ColorType: String {
     case BG_BlueColor = "bgBlueColor"
-    case BlackItalic = "Montserrat-BlackItalic"
+    case DarkGray = "DarkGray"
     case Bold = "Montserrat-Bold"
     case BoldItalic = "Montserrat-BoldItalic"
     case ExtraBold = "Montserrat-ExtraBold"
