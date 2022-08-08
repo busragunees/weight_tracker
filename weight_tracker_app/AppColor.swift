@@ -13,6 +13,12 @@ struct AppColor {
 enum ColorType: String {
     case BG_BlueColor = "bgBlueColor"
     case DarkGray = "DarkGray"
+    case TargetColor = "TargetColor"
+    case CurrentColor = "CurrentColor"
+    case BeginningtColor = "BeginningColor"
+    case RemainingColor = "RemainingColor"
+    case DroppedColor = "DroppedColor"
+    case ChartTitle = "ChartTitle"
  
 }
 static func getColor(type: ColorType) -> Color{

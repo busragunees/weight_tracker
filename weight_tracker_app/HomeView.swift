@@ -15,7 +15,7 @@ struct HomeView: View {
         TabView{
             AnalysisView()
                 .tabItem(){
-                    Label("Analysis", image: "AnalysisIcon")
+                    Label("Analysis", systemImage: "chart.bar.xaxis")
                 }
             CalendarView()
                 .tabItem(){

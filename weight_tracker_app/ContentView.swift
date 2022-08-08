@@ -54,7 +54,8 @@ struct ContentView: View {
                                         .cornerRadius(20)
                                     
                                     Spacer()
-                                    .frame(height: 160)}.frame(width: 200 , height: 250,alignment: .center),alignment:.bottom)
+                                    .frame(height: 160)}
+                                    .frame(width: 200 , height: 250,alignment: .center),alignment:.bottom)
                       
                     }
                 
