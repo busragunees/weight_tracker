@@ -8,20 +8,16 @@
 import SwiftUI
 
 
-
 struct TitleView:View{
     var body:some View{
-        Text("Welcome to \nWeight Tracker").font(AppFont.font(type: .ExtraLight, size:28)).multilineTextAlignment(.center).padding(.top,100).foregroundColor(AppColor.getColor(type:.DarkGray))
+        Text("Don't lose faith \n\(Text("lose weight").foregroundColor(AppColor.getColor(type: .purpleColor)))")
+
+            .font(AppFont.font(type: .Bold, size:28))
+            .multilineTextAlignment(.center).padding(.top,100)
+            .foregroundColor(AppColor.getColor(type:.ChartTitle))
     }
 }
-struct TextView:View{
-    var body: some View{
-        VStack {
-            Text("Follow your weight in a controlled way, notice the change, stay healthy and fit.").font(.body).foregroundColor(.gray)
-        }
-        
-    }
-}
+/*Text("Follow your weight in a controlled way, notice the change, stay healthy and fit.").font(.body).foregroundColor(.gray)*/
 
 
 struct ContentView: View {
@@ -33,36 +29,39 @@ struct ContentView: View {
             HomeView()
         }else{
             ZStack(alignment:.top){
-                Color("bgBlueColor")
+                Color("purpleColor")
+                    .edgesIgnoringSafeArea(.all)
                 VStack {
-                    
                     Image("ic_splash_logo")
+                        .resizable()
+                        .frame(width: 350, height: 350)
                         .aspectRatio(contentMode: .fit)
-                        .padding(.top, 90)
-                    VStack(){
-                        Image("bg_rounded_white")
-                            .overlay(TitleView(),alignment:.top)
-                            .overlay(TextView(),alignment: .center)
-                            .shadow(color: .gray, radius: 1)
-                            .padding(.top, 1.0)
-                            .overlay(
-                                Button(action: { self.isActive=true }) {
-                                    Text("Get Started")
-                                        .frame(width: 270 , height: 60, alignment: .center)
-                                        .background(Color.indigo)
-                                        .foregroundColor(Color.white)
-                                        .cornerRadius(20)
-                                    
-                                    Spacer()
-                                    .frame(height: 160)}
-                                    .frame(width: 200 , height: 250,alignment: .center),alignment:.bottom)
-                      
+                        .padding(.top,30)
+                        .padding(.bottom,-7)
+                        .padding(.leading,40)
+                        .padding(.trailing,8)
+
+                    
+                    ZStack(){Color.white.edgesIgnoringSafeArea(.all)
+                                        
+                        VStack {
+                            TitleView()
+                                    Button(action: { self.isActive=true }) {
+                                        Text("Get Started")
+                                            .frame(width: 350 , height: 63, alignment: .center)
+                                            .background(AppColor.getColor(type: .purpleColor))
+                                            .foregroundColor(Color.white)
+                                            .font(AppFont.font(type:.Bold, size:27))
+                                            .cornerRadius(18)
+                                        
+                                    }.padding(.top,50)
+                        }
+                        
+                        
                     }
-                
                 }
-            }}
-
-
+            }
+        }
     }
     
     

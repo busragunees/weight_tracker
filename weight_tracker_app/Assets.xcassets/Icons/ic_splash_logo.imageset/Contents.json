@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "ic_splash_logo.png",
+      "filename" : "Get-Started-Logo.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "ic_splash_logo@2x.png",
+      "filename" : "Get-Started-Logo@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "ic_splash_logo@3x.png",
+      "filename" : "Get-Started-Logo@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
