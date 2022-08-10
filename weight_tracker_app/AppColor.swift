@@ -17,8 +17,9 @@ enum ColorType: String {
     case CurrentColor = "CurrentColor"
     case BeginningtColor = "BeginningColor"
     case RemainingColor = "RemainingColor"
-    case DroppedColor = "DroppedColor"
+    case purpleColor = "purpleColor"
     case ChartTitle = "ChartTitle"
+    case CardTitleColor = "CardTitleColor"
  
 }
 static func getColor(type: ColorType) -> Color{

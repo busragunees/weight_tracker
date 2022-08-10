@@ -19,18 +19,19 @@ struct HomeView: View {
                 }
             CalendarView()
                 .tabItem(){
-                    Label("Calendar", image: "CalendarIcon")
+                    Label("Calendar", systemImage: "calendar")
                 }
            
             ProfileView()
                 .tabItem(){
-                    Label("Profile", image: "ProfileIcon")
+                    Label("Profile", systemImage: "person")
                 }
             SettingsView()
                 .tabItem(){
-                    Label("Settings", image: "SettingsIcon").font(.system(size: 70))
+                    Label("Settings", systemImage: "gearshape")
+                        
                 }
-        }
+        }.accentColor(AppColor.getColor(type: .purpleColor))
            
             
         
