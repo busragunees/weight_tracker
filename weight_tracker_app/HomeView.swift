@@ -17,19 +17,11 @@ struct HomeView: View {
                 .tabItem(){
                     Label("Analysis", systemImage: "chart.bar.xaxis")
                 }
-            CalendarView()
-                .tabItem(){
-                    Label("Calendar", systemImage: "calendar")
-                }
+          
            
             ProfileView()
                 .tabItem(){
                     Label("Profile", systemImage: "person")
-                }
-            SettingsView()
-                .tabItem(){
-                    Label("Settings", systemImage: "gearshape")
-                        
                 }
         }.accentColor(AppColor.getColor(type: .purpleColor))
            
