@@ -11,14 +11,15 @@ import SwiftUI
 struct TitleView:View{
     var body:some View{
         Text("Don't lose faith \n\(Text("lose weight").foregroundColor(AppColor.getColor(type: .purpleColor)))")
-
             .font(AppFont.font(type: .Bold, size:28))
             .multilineTextAlignment(.center).padding(.top,100)
             .foregroundColor(AppColor.getColor(type:.ChartTitle))
+            .padding(.bottom)
     }
 }
-/*Text("Follow your weight in a controlled way, notice the change, stay healthy and fit.").font(.body).foregroundColor(.gray)*/
-
+/*
+ splashtaki tartı altındaki metin.
+ Text("Follow your weight in a controlled way, notice the change, stay healthy and fit.").font(.body).foregroundColor(.gray)*/
 
 struct ContentView: View {
     @State var isActive:Bool = false
@@ -42,28 +43,24 @@ struct ContentView: View {
                         .padding(.trailing,8)
 
                     
-                    ZStack(){Color.white.edgesIgnoringSafeArea(.all)
+                    ZStack(){Color.white.edgesIgnoringSafeArea(.all).shadow(color: Color.white,radius: 10)
                                         
-                        VStack {
-                            TitleView()
-                                    Button(action: { self.isActive=true }) {
-                                        Text("Get Started")
-                                            .frame(width: 350 , height: 63, alignment: .center)
-                                            .background(AppColor.getColor(type: .purpleColor))
-                                            .foregroundColor(Color.white)
-                                            .font(AppFont.font(type:.Bold, size:27))
-                                            .cornerRadius(18)
-                                        
-                                    }.padding(.top,50)
+                    VStack{
+                        TitleView()
+                        Button(action: { self.isActive=true }){
+                        Text("Get Started")
+                        .frame(width: 350 , height: 63, alignment: .center)
+                        .background(AppColor.getColor(type: .purpleColor))
+                        .foregroundColor(Color.white)
+                        .font(AppFont.font(type:.Bold, size:27))
+                        .cornerRadius(18) }
+                        .padding(.top,50)
                         }
-                        
-                        
                     }
                 }
             }
         }
     }
-    
     
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {

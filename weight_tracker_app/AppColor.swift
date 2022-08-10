@@ -15,7 +15,7 @@ enum ColorType: String {
     case DarkGray = "DarkGray"
     case TargetColor = "TargetColor"
     case CurrentColor = "CurrentColor"
-    case BeginningtColor = "BeginningColor"
+    case BeginningColor = "BeginningColor"
     case RemainingColor = "RemainingColor"
     case purpleColor = "purpleColor"
     case ChartTitle = "ChartTitle"

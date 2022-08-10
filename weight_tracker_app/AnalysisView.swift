@@ -82,9 +82,9 @@ struct AnalysisView: View {
                                 HStack {
                                     Circle().frame(width: 10)
                                         .padding(.leading)
-                                        .foregroundColor(AppColor.getColor(type: .BeginningtColor))
+                                        .foregroundColor(AppColor.getColor(type: .BeginningColor))
                                     
-                                    Text("Current: 75.0")
+                                    Text("Beginning: 75.0")
                                         .frame(alignment: .leading)
                                         .font(AppFont.font(type: .ExtraLight, size: 12))
                                     
