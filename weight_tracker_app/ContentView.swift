@@ -19,7 +19,7 @@ struct TitleView:View{
 }
 /*
  splashtaki tartı altındaki metin.
- Text("Follow your weight in a controlled way, notice the change, stay healthy and fit.").font(.body).foregroundColor(.gray)*/
+ */
 
 struct ContentView: View {
     @State var isActive:Bool = false
