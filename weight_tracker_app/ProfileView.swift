@@ -15,7 +15,7 @@ struct ProfileView: View {
                 VStack{
                     CardView(){
                         Text("How Do \n\(Text("You Feel ?").foregroundColor(.black))")
-                            //.padding(70)
+                            //.padding(70) 
                     }
                 }.padding(.top,70)
                     .frame(width: 370,height: 121)

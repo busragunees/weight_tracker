@@ -11,8 +11,8 @@ import SwiftUI
 struct weight_tracker_appApp: App {
     var body: some Scene {
         WindowGroup {
-            //TestView()
-            ContentView()
+            SplashView()
+            //ContentView()
         }
     }
 }

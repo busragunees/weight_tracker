@@ -37,7 +37,11 @@ struct HomeView: View {
 
     }
     
-    
+    /*Picker("Your age", selection: $number) {
+                    ForEach(1...100, id: \.self) { number in
+                        Text("\(number)")
+                    }
+                }.pickerStyle(.wheel)*/
     
     
     struct HomeView_Previews: PreviewProvider {
